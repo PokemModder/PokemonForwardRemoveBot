@@ -3,7 +3,7 @@ import os
 
 #Bot Token
 #Needed To interact With Bot
-START_TEXT=os.environ.get('StartMsg',None)
+START_TEXT=os.environ.get('StartMesg',None)
 HELP_TEXT=os.environ.get('HelpMsg',None)
 token=os.environ.get('BOT_TOKEN',None)
 
