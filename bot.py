@@ -1,11 +1,11 @@
 from telegram.ext import Filters,Updater,MessageHandler,CommandHandler
-
+import os
 
 #Bot Token
 #Needed To interact With Bot
 START_TEXT='Hi, I am POKÉMON FORWARD TAG REMOVER BOT \n\nJust Forward me messages or Files and I will Anonymize the sender and Remove Forward Tag.\n\nThis bot is specially for @POKEMONMODDER\n\nThis bot is made by @PokemonModder_Owner\n\nNote :- This bot is specially for @POKEMONMODDER but all can use it.'
 HELP_TEXT='Just Forward me messages or Files and I will Anonymize the sender and Remove Forward Tag.'
-token="1894604868:AAGXejSDO9kAUvm2O5SSlAFvoA2h8-7L0Wk"
+token=os.environ.get('BOT_TOKEN',None)
 
 
 #Start Message
