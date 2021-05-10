@@ -3,8 +3,8 @@ import os
 
 #Bot Token
 #Needed To interact With Bot
-START_TEXT='Hi, I am POKÉMON FORWARD TAG REMOVER BOT \n\nJust Forward me messages or Files and I will Anonymize the sender and Remove Forward Tag.\n\nThis bot is specially for @POKEMONMODDER\n\nThis bot is made by @PokemonModder_Owner\n\nNote :- This bot is specially for @POKEMONMODDER but all can use it.'
-HELP_TEXT='Just Forward me messages or Files and I will Anonymize the sender and Remove Forward Tag.'
+START_TEXT=os.environ.get('StartMesg',None)
+HELP_TEXT=os.environ.get('HelpMsg',None)
 token=os.environ.get('BOT_TOKEN',None)
 
 
